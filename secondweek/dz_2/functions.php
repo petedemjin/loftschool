@@ -1,7 +1,8 @@
 <?php
 function db()
 {
-   return new PDO ('mysql:host=localhost;dbname=burger', 'root', 'root');
+    $dbh = new PDO ('mysql:host=localhost;dbname=burger', 'root', 'root');
+    return $dbh;
 }
 
 function select($email)
